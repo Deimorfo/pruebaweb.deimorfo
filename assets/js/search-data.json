@@ -4,9 +4,9 @@
         "post0": {
             "title": "Title",
             "content": "Ajuste Polinomial . blabla bla bla bla bla bla bla bla bla -toc:true-badges: true -comments:true -image: images/padelpy.png . Ajustar la función a un polinomio y ese polinomio derivarlo. . $f(x) approx P_n(x)$ . $ frac{df(x)}{dx} approx frac{dP_n(x)}{dx}$ . si expresamos en términos de diferencias divididas: . $P_n(x)=f(x_0)+(x-x_0) frac{ Delta f(x_0)}{h}+(x-x_0)(x-x_1) frac{ Delta^2 f(x_0)}{2!h^2}+...+(x-x_0)(x-x_1) frac{ Delta^n f(x_0)}{n!h^n}$ . si n=1 . $P_1(x)=f(x_0)+(x-x_0) frac{ Delta f(x_0)}{h}$ . $ frac{dP_1(x)}{dx}= frac{ Delta f(x_0)}{h}=F[x_0]$ . $ frac{d^2P_1(x)}{dx}=0$ . $f(x) approx P_n(x)$ . $ frac{df(x)}{dx} approx frac{dP_n(x)}{dx}$ $P_n(x)=f(x_0)+(x-x_0) frac{ Delta f(x_0)}{h}+(x-x_0)(x-x_1) frac{ Delta^2 f(x_0)}{2!h^2}+...+(x-x_0)(x-x_1) frac{ Delta^n f(x_0)}{n!h^n}$ . $P_1(x)=f(x_0)+(x-x_0) frac{ Delta f(x_0)}{h}$ . $ frac{dP_1(x)}{dx}= frac{ Delta f(x_0)}{h}=F[x_0]$ . $ frac{d^2P_1(x)}{dx}=0$ . . import numpy as np import matplotlib.pyplot as plt . P=np.array([13.782,12.577,11.565,10.704]) v=np.array([2000,2200,2400,2600]) . from matplotlib import pyplot as plt plt.plot(v,P,&quot;o--&quot;,label =&#39;Puntos&#39;) plt.xlabel(&quot;v [cm^3]&quot;) plt.ylabel(&quot;Presión [atm]&quot;) plt.grid(True) plt.title(&#39;CO2 A 350K&#39;) plt.show() . a=3.6E-6 b=42.8 R=82.1 diff=((-R*350)/(2500-b)**2)+((2*a)/2500**3) diff . -0.004759158711514765 . Aproximación $ frac{f(2600)-f(2400}{200}=-0.0043$ . Error=np.abs((diff+4.3E-3)/diff)*100 Error . 9.647896599956466 . P=np.array([12.577,11.565,10.704]) v=np.array([2200,2400,2600]) . coef=np.polyfit(v,P,2) #Determina los coeficientes del polinomio. 2 es el orden del polinomio coef . array([ 1.88750e-06, -1.37425e-02, 3.36750e+01]) . diffcoef=np.polyder(coef) #Deriva el polinomio diffcoef . array([ 3.77500e-06, -1.37425e-02]) .",
-            "url": "https://deimorfo.github.io/pruebaweb.deimorfo/2022/09/02/ajust-polinom.html",
-            "relUrl": "/2022/09/02/ajust-polinom.html",
-            "date": " • Sep 2, 2022"
+            "url": "https://deimorfo.github.io/pruebaweb.deimorfo/2022/09/03/ajust-polinom.html",
+            "relUrl": "/2022/09/03/ajust-polinom.html",
+            "date": " • Sep 3, 2022"
         }
         
     
@@ -15,9 +15,9 @@
         ,"post1": {
             "title": "Title",
             "content": "Ajustar la función a un polinomio y ese polinomio derivarlo. . This guide provides more detail about this syntax . $f(x) approx P_n(x)$ . $ frac{df(x)}{dx} approx frac{dP_n(x)}{dx}$ . si expresamos en términos de diferencias divididas: . $P_n(x)=f(x_0)+(x-x_0) frac{ Delta f(x_0)}{h}+(x-x_0)(x-x_1) frac{ Delta^2 f(x_0)}{2!h^2}+...+(x-x_0)(x-x_1) frac{ Delta^n f(x_0)}{n!h^n}$ . si n=1 . $P_1(x)=f(x_0)+(x-x_0) frac{ Delta f(x_0)}{h}$ . $ frac{dP_1(x)}{dx}= frac{ Delta f(x_0)}{h}=F[x_0]$ . $ frac{d^2P_1(x)}{dx}=0$ . . import numpy as np import matplotlib.pyplot as plt . P=np.array([13.782,12.577,11.565,10.704]) v=np.array([2000,2200,2400,2600]) . from matplotlib import pyplot as plt plt.plot(v,P,&quot;o--&quot;,label =&#39;Puntos&#39;) plt.xlabel(&quot;v [cm^3]&quot;) plt.ylabel(&quot;Presión [atm]&quot;) plt.grid(True) plt.title(&#39;CO2 A 350K&#39;) plt.show() . a=3.6E-6 b=42.8 R=82.1 diff=((-R*350)/(2500-b)**2)+((2*a)/2500**3) diff . -0.004759158711514765 . Aproximación $ frac{f(2600)-f(2400}{200}=-0.0043$ . Error=np.abs((diff+4.3E-3)/diff)*100 Error . 9.647896599956466 . P=np.array([12.577,11.565,10.704]) v=np.array([2200,2400,2600]) . coef=np.polyfit(v,P,2) #Determina los coeficientes del polinomio. 2 es el orden del polinomio coef . array([ 1.88750e-06, -1.37425e-02, 3.36750e+01]) . diffcoef=np.polyder(coef) #Deriva el polinomio diffcoef . array([ 3.77500e-06, -1.37425e-02]) .",
-            "url": "https://deimorfo.github.io/pruebaweb.deimorfo/2022/09/02/_03_29_diff_numerica_Post-(1).html",
-            "relUrl": "/2022/09/02/_03_29_diff_numerica_Post-(1).html",
-            "date": " • Sep 2, 2022"
+            "url": "https://deimorfo.github.io/pruebaweb.deimorfo/2022/09/03/_03_29_diff_numerica_Post-(1).html",
+            "relUrl": "/2022/09/03/_03_29_diff_numerica_Post-(1).html",
+            "date": " • Sep 3, 2022"
         }
         
     
