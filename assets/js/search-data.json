@@ -87,21 +87,23 @@
   
 
   
-  
-
-  
 
   
   
 
-  
   
 
   
   
 
   
-      ,"page9": {
+  
+
+  
+  
+
+  
+      ,"page10": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://deimorfo.github.io/pruebaweb.deimorfo/robots.txt",
