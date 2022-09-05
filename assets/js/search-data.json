@@ -73,7 +73,7 @@
   
       ,"page1": {
           "title": "YOP",
-          "content": ".centrado{ margin:10px auto; display:block; } .",
+          "content": "",
           "url": "https://deimorfo.github.io/pruebaweb.deimorfo/about/",
           "relUrl": "/about/",
           "date": ""
