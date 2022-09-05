@@ -3,6 +3,13 @@ layout: page
 title: YOP
 permalink: /about/
 ---
-<p align="left">
-  <img src="images/jdg.png">
-</p>
+
+![]({{site.baseurl}}/images/jdg.png)
+
+<img class="centrado" src="/images/jdg.png" alt="Solvetic">
+
+img.center {
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
