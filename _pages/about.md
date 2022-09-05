@@ -4,4 +4,14 @@ title: YOP
 permalink: /about/
 ---
 
- ![](/images/jdg.png)   
+This site is built with [fastpages](https://github.com/fastai/fastpages), dfgvdfsegegergergergergergergergergergerg
+
+![]({{site.baseurl}}/images/diagram.png "https://github.com/fastai/fastpages")
+
+[Busqueda](https://deimorfo.github.io/pruebaweb.deimorfo/search/) automates the process of creating blog posts via GitHub Actions, so you don't have to fuss with conversion scripts.  A full list of features can be found on [GitHub](https://github.com/fastai/fastpages).  
+
+You can edit the `index.html` file to change this content.
+
+# Repositorio Metodos
+
+![](/images/jdg.png)   
