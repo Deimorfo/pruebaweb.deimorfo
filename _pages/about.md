@@ -16,3 +16,11 @@ You can edit the `index.html` file to change this content.
 <p>
   <img align="left" width="200" height="200" src="https://deimorfo.github.io/pruebaweb.deimorfo/images/diagram.png" alt="Monitor de computadora, mostrando codigo">
 </p>
+
+<p>
+  <img align="left" width="200" height="200" src="https://deimorfo.github.io/pruebaweb.deimorfo/images/Jma.png" alt="Monitor de computadora, mostrando codigo">
+</p>
+
+<p>
+  <img align="left" width="200" height="200" src="https://deimorfo.github.io/pruebaweb.deimorfo/images/Jma.jpg" alt="Monitor de computadora, mostrando codigo">
+</p>
