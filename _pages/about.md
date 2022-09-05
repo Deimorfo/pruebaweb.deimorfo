@@ -14,4 +14,4 @@ You can edit the `index.html` file to change this content.
 
 # Repositorio Metodos
 
-![](/images/jdg.png)   
+![]({{site.baseurl}}/images/jdg.png "https://github.com/fastai/fastpages")
