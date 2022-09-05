@@ -14,13 +14,13 @@ You can edit the `index.html` file to change this content.
 
 # Repositorio Metodos
 <p>
-  <img align="left" width="200" height="200" src="https://deimorfo.github.io/pruebaweb.deimorfo/images/diagram.png" alt="Monitor de computadora, mostrando codigo">
+  <img align="left" width="200" height="200" src="https://deimorfo.github.io/pruebaweb.deimorfo/images/diagram.png">
 </p>
 
 <p>
-  <img align="left" width="80" height="80" src="https://deimorfo.github.io/pruebaweb.deimorfo/images/Jma.png" HSPACE="500" alt="Monitor de computadora, mostrando codigo">
+  <img align="left" width="80" height="80" src="https://deimorfo.github.io/pruebaweb.deimorfo/images/Jma.png" HSPACE="500">
 </p>
 
 <p>
-  <img align="left" width="200" height="200" src="https://deimorfo.github.io/pruebaweb.deimorfo/images/Jma.jpg" HSPACE="1000" alt="Monitor de computadora, mostrando codigo">
+  <img align="left" width="200" height="200" src="https://deimorfo.github.io/pruebaweb.deimorfo/images/Jma.jpg" HSPACE="500">
 </p>
