@@ -6,6 +6,6 @@ permalink: /about/
 <a>
     <img src="/images/jdg.png"
     width="300" height="300"
-    alt="texto alternativo de la imagen" />
+    alt="pipi" />
 </a>
 
