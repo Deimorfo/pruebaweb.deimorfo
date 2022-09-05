@@ -18,7 +18,7 @@ You can edit the `index.html` file to change this content.
 </p>
 
 <p>
-  <img align="left" width="200" height="200" src="https://deimorfo.github.io/pruebaweb.deimorfo/images/Jma.png" alt="Monitor de computadora, mostrando codigo">
+  <img align="left" width="80" height="80" src="https://deimorfo.github.io/pruebaweb.deimorfo/images/Jma.png" alt="Monitor de computadora, mostrando codigo">
 </p>
 
 <p>
