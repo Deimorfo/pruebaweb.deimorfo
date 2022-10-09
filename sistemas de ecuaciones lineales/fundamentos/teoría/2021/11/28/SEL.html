@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Sistemas de ecuaciones lineales | Prieba 1</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Sistemas de ecuaciones lineales" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Fundamentos matemáticos para la formulación y solución de sistemas de ecuaciones lineales" />
+<meta property="og:description" content="Fundamentos matemáticos para la formulación y solución de sistemas de ecuaciones lineales" />
+<link rel="canonical" href="https://deimorfo.github.io/pruebaweb.deimorfo/sistemas%20de%20ecuaciones%20lineales/fundamentos/teor%C3%ADa/2021/11/28/SEL.html" />
+<meta property="og:url" content="https://deimorfo.github.io/pruebaweb.deimorfo/sistemas%20de%20ecuaciones%20lineales/fundamentos/teor%C3%ADa/2021/11/28/SEL.html" />
+<meta property="og:site_name" content="Prieba 1" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-11-28T00:00:00-06:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Sistemas de ecuaciones lineales" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2021-11-28T00:00:00-06:00","datePublished":"2021-11-28T00:00:00-06:00","description":"Fundamentos matemáticos para la formulación y solución de sistemas de ecuaciones lineales","headline":"Sistemas de ecuaciones lineales","mainEntityOfPage":{"@type":"WebPage","@id":"https://deimorfo.github.io/pruebaweb.deimorfo/sistemas%20de%20ecuaciones%20lineales/fundamentos/teor%C3%ADa/2021/11/28/SEL.html"},"url":"https://deimorfo.github.io/pruebaweb.deimorfo/sistemas%20de%20ecuaciones%20lineales/fundamentos/teor%C3%ADa/2021/11/28/SEL.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/pruebaweb.deimorfo/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://deimorfo.github.io/pruebaweb.deimorfo/feed.xml" title="Prieba 1" /><link rel="shortcut icon" type="image/x-icon" href="/pruebaweb.deimorfo/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/katex.min.css" integrity="sha512-h7nl+xz8wgDlNM4NqKEM4F1NkIRS17M9+uJwIGwuo8vGqIl4BhuCKdxjWEINm+xyrUjNCnK5dCrhM0sj+wTIXw==" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/katex.min.js" integrity="sha512-/CMIhXiDA3m2c9kzRyd97MTb3MC6OVnx4TElQ7fkkoRghwDf6gi41gaT1PwF270W6+J60uTmwgeRpNpJdRV6sg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/contrib/auto-render.min.js" integrity="sha512-Do7uJAaHZm5OLrIv/yN4w0iG1dbu01kzdMNnFfu/mAqgUk6Nniv2JYHcwH+cNwjqgLcqcuBBk+JRvprLVI8azg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha512-0doc9hKxR3PYwso42RD1p5ySZpzzuDiOwMrdCEh2WdJZCjcmFKc/wEnL+z8fBQrnHoiNWbo+3fiGkOYXBdQp4A==" crossorigin="anonymous"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement( document.body, {
+        delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "[%", right: "%]", display: true},
+            {left: "$", right: "$", display: false}
+        ]}
+        );
+    });
+    </script>
+
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/pruebaweb.deimorfo/">Prieba 1</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/pruebaweb.deimorfo/about/">YOP</a><a class="page-link" href="/pruebaweb.deimorfo/search/">Busqueda</a><a class="page-link" href="/pruebaweb.deimorfo/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Sistemas de ecuaciones lineales</h1><p class="page-description">Fundamentos matemáticos para la formulación y solución de sistemas de ecuaciones lineales</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-11-28T00:00:00-06:00" itemprop="datePublished">
+        Nov 28, 2021
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      3 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/pruebaweb.deimorfo/categories/#Sistemas de ecuaciones lineales">Sistemas de ecuaciones lineales</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/pruebaweb.deimorfo/categories/#Fundamentos">Fundamentos</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/pruebaweb.deimorfo/categories/#Teoría">Teoría</a>
+        
+      
+      </p>
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-justify-center">
+          <div class="px-2">
+
+    <a href="https://github.com/Deimorfo/pruebaweb.deimorfo/tree/master/_notebooks/2021-11-28-SEL .ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/pruebaweb.deimorfo/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/Deimorfo/pruebaweb.deimorfo/master?filepath=_notebooks%2F2021-11-28-SEL+.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/pruebaweb.deimorfo/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/Deimorfo/pruebaweb.deimorfo/blob/master/_notebooks/2021-11-28-SEL .ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/pruebaweb.deimorfo/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+          <div class="px-2">
+  <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2FDeimorfo%2Fpruebaweb.deimorfo%2Fblob%2Fmaster%2F_notebooks%2F2021-11-28-SEL+.ipynb" target="_blank">
+      <img class="notebook-badge-image" src="/pruebaweb.deimorfo/assets/badges/deepnote.svg" alt="Launch in Deepnote"/>
+  </a>
+</div>
+
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h1"><a href="#Definición-de-un-sistema-de-ecuaciones-lineales">Definición de un sistema de ecuaciones lineales </a></li>
+<li class="toc-entry toc-h1"><a href="#Solución-matricial-de-un-sistema">Solución matricial de un sistema </a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#Ejemplo-de-solución">Ejemplo de solución </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#Solución-paso-a-paso">Solución paso a paso </a></li>
+<li class="toc-entry toc-h3"><a href="#Solución-usando-numpy">Solución usando numpy </a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-entry toc-h1"><a href="#Referencias">Referencias </a></li>
+</ul><!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2021-11-28-SEL .ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Definición-de-un-sistema-de-ecuaciones-lineales">
+<a class="anchor" href="#Definici%C3%B3n-de-un-sistema-de-ecuaciones-lineales" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Definición de un sistema de ecuaciones lineales</strong><a class="anchor-link" href="#Definici%C3%B3n-de-un-sistema-de-ecuaciones-lineales"> </a>
+</h1>
+<p align="justify">Antes abordar la solución computacional de un sistema de ecuaciones lineales debemos definir estos sistemas en cuestión, así bien, la forma general de un sistema de este tipo es:</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>$\begin{equation}
+\begin{gathered}
+a_{1,1} x_1+a_{1,2} x_2+\ldots+a_{1, n} x_n=b_1 \\
+a_{2,1} x_1+a_{2,2} x_2+\ldots+a_{2, n} x_n=b_2 \\
+\vdots \\
+a_{n, 1} x_1+a_{n, 2} x_2+\ldots+a_{n, n} x_n=b_n
+\end{gathered}
+\end{equation}$</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p align="justify">Donde $x_{i}$ representa las variables desconocidas que estamos intentando hallar, $a_{i}$ son los coeficientes que acompañan a dichas variables y $b_{i}$ son los coeficientes a los cuales están igualadas nuestras ecuaciones. También cabe resaltar que para la solución de sistemas hemos de tener el mismo numero de ecuaciones que de variables desconocidas, esto para evitar sobre especificar el sistema. Con base en lo anterior, podemos escribir nuestro sistema de ecuaciones de forma matricial</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+\begin{equation}
+\mathbf{Ax = b} 
+\end{equation}
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p align="justify">Donde $\mathbf{A}$ es la matriz de coeficientes</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+\begin{equation}
+\mathbf{A}=\left[\begin{array}{cccc}
+a_{1,1} &amp; a_{1,2} &amp; \cdots &amp; a_{1, n} \\
+a_{2,1} &amp; a_{2,2} &amp; \cdots &amp; a_{2, n} \\
+\vdots &amp; \vdots &amp; &amp; \vdots \\
+a_{n, 1} &amp; a_{n, 2} &amp; \cdots &amp; a_{n, n}
+\end{array}\right]
+\end{equation}
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>$\mathbf{x}$ es el vector de variables desconocidas</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+\begin{equation}
+\mathbf{x}=\left[\begin{array}{c}
+x_1 \\
+x_2 \\
+\vdots \\
+x_n
+\end{array}\right]
+\end{equation}
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p align="justify">Y $\mathbf{b}$ es el vector de constantes a las cuales están igualadas las ecuaciones</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+\begin{equation}
+\mathbf{b}=\left[\begin{array}{c}
+b_1 \\
+b_2 \\
+\vdots \\
+b_n
+\end{array}\right]
+\end{equation}
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Solución-matricial-de-un-sistema">
+<a class="anchor" href="#Soluci%C3%B3n-matricial-de-un-sistema" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Solución matricial de un sistema</strong><a class="anchor-link" href="#Soluci%C3%B3n-matricial-de-un-sistema"> </a>
+</h1>
+<p align="justify">Mediante el tratamiento algebraico de la $(eq.1)$ podemos despejar $\mathbf{x}$ </p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+\begin{equation}
+\mathbf{x = A^{-1}b} 
+\end{equation}
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p align="justify">De forma que para hallar nuestro vector de variables desconociadas $\mathbf{x}$, simplemente debemos encontrar la matriz inversa de nuestra matriz $\mathbf{A}$ y multiplicarla por el vector $\mathbf{b}$ </p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Ejemplo-de-solución">
+<a class="anchor" href="#Ejemplo-de-soluci%C3%B3n" aria-hidden="true"><span class="octicon octicon-link"></span></a>Ejemplo de solución<a class="anchor-link" href="#Ejemplo-de-soluci%C3%B3n"> </a>
+</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Solución-paso-a-paso">
+<a class="anchor" href="#Soluci%C3%B3n-paso-a-paso" aria-hidden="true"><span class="octicon octicon-link"></span></a>Solución paso a paso<a class="anchor-link" href="#Soluci%C3%B3n-paso-a-paso"> </a>
+</h3>
+<p align="justify">Suponga usted que se desea resolver el siguiente sistema de ecuaciones lineales:</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+\begin{equation}
+\begin{aligned}
+x_1+2 x_2-x_3 &amp;=5 \\
+-x_1+3 x_2+x_3 &amp;=-2 \\
+x_1-x_2+x_3 &amp;=3
+\end{aligned}
+\end{equation}
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Como primer paso debemos crear nuestra matriz $\mathbf{A}$ y nuestros vector $\mathbf{b}$ en base a los coheficientes de las ecuaciones:</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="sd">"""</span>
+<span class="sd">Vamos a crear una matriz uzando np.array </span>
+<span class="sd">ya que si no la usamos se nos  definiria como una lista y no una matriz</span>
+<span class="sd">lo cual puede causar conflictos mas adelante en el codigo</span>
+<span class="sd">"""</span>
+<span class="n">A</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span>
+   <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span>
+   <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]])</span>
+
+<span class="n">b</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">5</span><span class="p">,</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p align="justify">Ahora según lo deducido en la $(eq.2)$ simplemente debemos hallar la matriz inversa de $\mathbf{A}$ y multiplicarla por $\mathbf{b}$</p>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">invA</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">inv</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+<span class="c1">#ahora multiplicamos invA por b para obtener x</span>
+<span class="n">x</span><span class="o">=</span><span class="n">invA</span><span class="nd">@b</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[ 3.7  0.6 -0.1]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p align="justify">De esta manera hemos solucionado el sistema, ahora bien, nótese que hemos descrito el proceso de solución paso a paso con el fin de que este sea más comprensible, sin embargo esto no nos impide realizar esta misma solución de una forma mas eficiente compactándola en una sola línea</p>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span><span class="o">=</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">inv</span><span class="p">(</span><span class="n">A</span><span class="p">))</span><span class="nd">@b</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[ 3.7  0.6 -0.1]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Solución-usando-numpy">
+<a class="anchor" href="#Soluci%C3%B3n-usando-numpy" aria-hidden="true"><span class="octicon octicon-link"></span></a>Solución usando numpy<a class="anchor-link" href="#Soluci%C3%B3n-usando-numpy"> </a>
+</h3>
+<p></p>
+<p align="justify">Si bien es fundamental el conocer el paso a paso que nos lleva a la solución de un sistema, a nivel de aplicación los sistemas lineales en la mayoría de ocasiones no son el centro de estudio de un problema, sino mas bien una herramienta para la solución del mismo, es decir, puede que para encontrar la solución a un problema de aplicación, sea necesaria la resolución de uno o varios sistemas de ecuaciones lineales para obtener incógnitas valiosas que sean parte de ese problema.</p>
+<p></p>
+<p align="justify">Es por esto que surge la necesitad de saber solucionar estos sistemas de manera rápida y precisa , ya que en la mayoría de los casos son simplemente parte de un problema mas grande, por esto se muestra a continuación como obtener estas soluciones de manera ágil mediante el uso del solver de la librería Numpy:</p>
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="n">x</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">solve</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[ 3.7  0.6 -0.1]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Referencias">
+<a class="anchor" href="#Referencias" aria-hidden="true"><span class="octicon octicon-link"></span></a>Referencias<a class="anchor-link" href="#Referencias"> </a>
+</h1>
+<p>La teoría usada en este blog fue tomada de:</p>
+<ul>
+<li>Dorfman, K. D. &amp; Daoutidis, P. (2017). <em>Numerical Methods with Chemical Engineering Applications</em>. Cambridge University Press.</li>
+</ul>
+
+</div>
+</div>
+</div>
+&lt;/div&gt;
+ 
+
+</div>
+</div></div>
+</div>
+
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="Deimorfo/pruebaweb.deimorfo"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/pruebaweb.deimorfo/sistemas%20de%20ecuaciones%20lineales/fundamentos/teor%C3%ADa/2021/11/28/SEL.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/pruebaweb.deimorfo/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/pruebaweb.deimorfo/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/pruebaweb.deimorfo/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
