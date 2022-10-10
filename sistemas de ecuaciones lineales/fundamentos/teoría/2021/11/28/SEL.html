@@ -173,96 +173,35 @@ window.onload = wrap_img;
 <h1 id="Definición-de-un-sistema-de-ecuaciones-lineales">
 <a class="anchor" href="#Definici%C3%B3n-de-un-sistema-de-ecuaciones-lineales" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Definición de un sistema de ecuaciones lineales</strong><a class="anchor-link" href="#Definici%C3%B3n-de-un-sistema-de-ecuaciones-lineales"> </a>
 </h1>
-<p align="justify">Antes abordar la solución computacional de un sistema de ecuaciones lineales debemos definir estos sistemas en cuestión, así bien, la forma general de un sistema de este tipo es:</p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-$$
+<p align="justify">Antes abordar la solución computacional de un sistema de ecuaciones lineales debemos definir estos sistemas en cuestión, así bien, la forma general de un sistema de este tipo es:</p>$$
 \begin{gathered}
 a_{1,1} x_1+a_{1,2} x_2+\ldots+a_{1, n} x_n=b_1 \\
 a_{2,1} x_1+a_{2,2} x_2+\ldots+a_{2, n} x_n=b_2 \\
 \vdots \\
 a_{n, 1} x_1+a_{n, 2} x_2+\ldots+a_{n, n} x_n=b_n
 \end{gathered}
+$$<p align="justify">Donde $x_{i}$ representa las variables desconocidas que estamos intentando hallar, $a_{i}$ son los coeficientes que acompañan a dichas variables y $b_{i}$ son los coeficientes a los cuales están igualadas nuestras ecuaciones. También cabe resaltar que para la solución de sistemas hemos de tener el mismo numero de ecuaciones que de variables desconocidas, esto para evitar sobre especificar el sistema. Con base en lo anterior, podemos escribir nuestro sistema de ecuaciones de forma matricial</p>
 $$
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p align="justify">Donde $x_{i}$ representa las variables desconocidas que estamos intentando hallar, $a_{i}$ son los coeficientes que acompañan a dichas variables y $b_{i}$ son los coeficientes a los cuales están igualadas nuestras ecuaciones. También cabe resaltar que para la solución de sistemas hemos de tener el mismo numero de ecuaciones que de variables desconocidas, esto para evitar sobre especificar el sistema. Con base en lo anterior, podemos escribir nuestro sistema de ecuaciones de forma matricial</p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-$$
-\begin{equation}
+\begin{gather*} 
 \mathbf{Ax = b}
-\end{equation}
+\end{gather*}
 $$
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p align="justify">Donde $\mathbf{A}$ es la matriz de coeficientes</p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-$$
+
+<p align="justify">Donde $\mathbf{A}$ es la matriz de coeficientes</p>$$
 \mathbf{A}=\left[\begin{array}{cccc}
 a_{1,1} &amp; a_{1,2} &amp; \cdots &amp; a_{1, n} \\
 a_{2,1} &amp; a_{2,2} &amp; \cdots &amp; a_{2, n} \\
 \vdots &amp; \vdots &amp; &amp; \vdots \\
 a_{n, 1} &amp; a_{n, 2} &amp; \cdots &amp; a_{n, n}
 \end{array}\right]
-$$
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>$\mathbf{x}$ es el vector de variables desconocidas</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-$$
+$$<p align="justify">$\mathbf{x}$ es el vector de variables desconocidas</p>$$
 \mathbf{x}=\left[\begin{array}{c}
 x_1 \\
 x_2 \\
 \vdots \\
 x_n
 \end{array}\right]
-$$
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p align="justify">Y $\mathbf{b}$ es el vector de constantes a las cuales están igualadas las ecuaciones</p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-$$
+$$<p align="justify">Y $\mathbf{b}$ es el vector de constantes a las cuales están igualadas las ecuaciones</p>$$
 \mathbf{b}=\left[\begin{array}{c}
 b_1 \\
 b_2 \\
