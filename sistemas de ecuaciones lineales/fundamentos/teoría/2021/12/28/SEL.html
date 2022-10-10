@@ -181,12 +181,7 @@ a_{2,1} x_1+a_{2,2} x_2+\ldots+a_{2, n} x_n=b_2 \\
 a_{n, 1} x_1+a_{n, 2} x_2+\ldots+a_{n, n} x_n=b_n
 \end{gathered}
 $$<p align="justify">Donde $x_{i}$ representa las variables desconocidas que estamos intentando hallar, $a_{i}$ son los coeficientes que acompañan a dichas variables y $b_{i}$ son los coeficientes a los cuales están igualadas nuestras ecuaciones. También cabe resaltar que para la solución de sistemas hemos de tener el mismo numero de ecuaciones que de variables desconocidas, esto para evitar sobre especificar el sistema. Con base en lo anterior, podemos escribir nuestro sistema de ecuaciones de forma matricial</p>
-$$
-\begin{gather*} 
-Ax = b \tag{eq.1}
-\end{gather*}
-$$
-
+<p>$\mathbf{Ax = b}\tag{eq.1}$</p>
 <p align="justify">Donde $\mathbf{A}$ es la matriz de coeficientes</p>$$
 \mathbf{A}=\left[\begin{array}{cccc}
 a_{1,1} &amp; a_{1,2} &amp; \cdots &amp; a_{1, n} \\
@@ -218,11 +213,9 @@ $$
 <h1 id="Solución-matricial-de-un-sistema">
 <a class="anchor" href="#Soluci%C3%B3n-matricial-de-un-sistema" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Solución matricial de un sistema</strong><a class="anchor-link" href="#Soluci%C3%B3n-matricial-de-un-sistema"> </a>
 </h1>
-<p align="justify">Mediante el tratamiento algebraico de la $(eq.1)$ podemos despejar $\mathbf{x}$ </p>$$
-\begin{gather*} 
-\mathbf{x = A^{-1}b}
-\end{gather*}
-$$<p align="justify">De forma que para hallar nuestro vector de variables desconociadas $\mathbf{x}$, simplemente debemos encontrar la matriz inversa de nuestra matriz $\mathbf{A}$ y multiplicarla por el vector $\mathbf{b}$ </p>
+<p align="justify">Mediante el tratamiento algebraico de la $(eq.1)$ podemos despejar $\mathbf{x}$ </p>
+<p>$\mathbf{x = A^{-1}b}\tag{eq.2}$</p>
+<p align="justify">De forma que para hallar nuestro vector de variables desconociadas $\mathbf{x}$, simplemente debemos encontrar la matriz inversa de nuestra matriz $\mathbf{A}$ y multiplicarla por el vector $\mathbf{b}$ </p>
 </div>
 </div>
 </div>
@@ -360,19 +353,17 @@ $$<p>Como primer paso debemos crear nuestra matriz $\mathbf{A}$ y nuestros vecto
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Solución-usando-numpy">
 <a class="anchor" href="#Soluci%C3%B3n-usando-numpy" aria-hidden="true"><span class="octicon octicon-link"></span></a>Solución usando numpy<a class="anchor-link" href="#Soluci%C3%B3n-usando-numpy"> </a>
 </h3>
-<p></p>
 <p align="justify">Si bien es fundamental el conocer el paso a paso que nos lleva a la solución de un sistema, a nivel de aplicación los sistemas lineales en la mayoría de ocasiones no son el centro de estudio de un problema, sino mas bien una herramienta para la solución del mismo, es decir, puede que para encontrar la solución a un problema de aplicación, sea necesaria la resolución de uno o varios sistemas de ecuaciones lineales para obtener incógnitas valiosas que sean parte de ese problema.</p>
-<p></p>
 <p align="justify">Es por esto que surge la necesitad de saber solucionar estos sistemas de manera rápida y precisa , ya que en la mayoría de los casos son simplemente parte de un problema mas grande, por esto se muestra a continuación como obtener estas soluciones de manera ágil mediante el uso del solver de la librería Numpy:</p>
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
+</div>
+</div>
+</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -420,12 +411,8 @@ $$<p>Como primer paso debemos crear nuestra matriz $\mathbf{A}$ y nuestros vecto
 </div>
 </div>
 </div>
-&lt;/div&gt;
- 
+</div>
 
-</div>
-</div></div>
-</div>
 
 
   </div><!-- from https://github.com/utterance/utterances -->
